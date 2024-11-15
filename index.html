@@ -1,26 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Minimal Website</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Hemanth Reddy Allugunti</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<style>
+body {top: 0; left: 0; width: 99%; height: 97%;
+    position: absolute; display: table}
+  p {display: table-cell; vertical-align: middle; text-align: center}
+#timezone * {text-decoration: none;}
+}
+</style>
+
+<script type="text/javascript">
+    let options = {
+        timeZone: 'Asia/Kolkata', /* Adjusted to India */
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+    },
+    formatter = new Intl.DateTimeFormat([], options);
+
+    setInterval(
+        () => {
+            document.querySelector("#time").innerText = formatter.format(new Date());
+        }
+    , 1000)
+</script>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Welcome to My Website</h1>
-            <nav>
-                <ul>
-                    <li><a href="pages/about.html">about</a></li>
-                    <li><a href="pages/faq.html">faq</a></li>
-                    <li><a href="pages/blog.html">blog</a></li>
-                    <li><a href="pages/contact.html">contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <script src="js/script.js"></script>
+
+<p>
+<font size="7"><i><b>Hemanth Reddy Allugunti</b></i></font> <br>
+<br>
+<img src="https://github.com/alluguntihemanth/my-website/blob/main/assets/pexels-apasaric-2339009.jpg?raw=true" style="width:560px;"><br>
+<br>
+<span id=timezone>
+<i>
+<a href="https://24timezones.com/world_directory/current_chennai_time.php">TIME IN CHENNAI INDIA</a> - <span id="time">0:00 PM</span> <a href="https://24timezones.com/time-zone/ist">IST</a>
+</i>
+</span>
+<br><br>
+
+<a href="https://hemanthallugunti.com/pages/about.html">about</a> //
+<a href="https://hemanthallugunti.com/pages/faq.html">faq</a> //
+<a href="https://hemanthallugunti.com/pages/blog.html">blog</a> //
+<a href="https://hemanthallugunti.com/pages/contact.html">contact</a>
+
+<br>
+<br>
 </body>
 </html>
+
