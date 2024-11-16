@@ -1,5 +1,2 @@
 User-agent: *
-Disallow: /
-Allow: /index.html
-Allow: /pages/about.html
-Allow: /pages/contact.html
+Disallow:
