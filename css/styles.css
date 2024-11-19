@@ -1,59 +1,86 @@
 /* styles.css */
-
-/* Global Styles */
 body {
-    font-family: 'Georgia', serif;
-    background-color: #f5f0dc;
-    color: #3b3b3b;
+    font-family: 'Garamond', serif;  /* Retro font style */
     margin: 0;
     padding: 0;
+    background-color: #3E2723; /* Deep brown background */
+    color: #F4E1D2; /* Light off-white text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://example.com/vintage-texture.png'); /* Optional vintage texture */
+    background-size: cover;
 }
 
-h1, h2 {
-    font-family: 'Cinzel', serif;
-    color: #5f4b8b;
+.container {
     text-align: center;
+    width: 80%;
 }
 
-/* Header */
-header {
-    background-color: #b34d89;
-    padding: 20px;
+header h1 {
+    font-size: 4rem;
+    color: #FFD700; /* Gold for headings */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  /* Subtle shadow for a vintage effect */
+}
+
+.time-location {
+    font-size: 1.5rem;
+    color: #B5A642; /* Muted gold */
+    margin-bottom: 1rem;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+    text-align: center;
+    margin-top: 20px;
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #F4E1D2;
+    font-size: 1.2rem;
     font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* Section */
-section.intro, section.qa-section, section.contact-section, section.blog-section {
-    margin: 30px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+nav ul li a:hover {
+    color: #FFD700; /* Hover effect with golden color */
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);  /* Adding glow effect on hover */
 }
 
-footer {
-    background-color: #b34d89;
-    padding: 10px;
-    text-align: center;
-    color: white;
+button {
+    background-color: #8B4513; /* Brown for the buttons */
+    color: #F4E1D2;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
 
-a:hover {
-    color: #b34d89;
+button:hover {
+    background-color: #FFD700; /* Golden hover effect */
+    transform: scale(1.1);  /* Slight grow effect on hover */
 }
+
+button:focus {
+    outline: none;
+}
+
+/* Adding some spacing and padding for better readability */
+p, .container p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 
