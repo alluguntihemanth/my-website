@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html>
-<!-- Favicon by Streamline Design Inc. -->
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Hemanth Reddy Allugunti</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/styles.css">
-    <script type="text/javascript">
-        let options = {
-            timeZone: 'Asia/Kolkata',
-            hour: 'numeric',
-            minute: 'numeric',
-            second: 'numeric',
-        },
-        formatter = new Intl.DateTimeFormat([], options);
+<!-- Favicon by Streamline Design Inc. - https://cdn0.iconfinder.com/data/icons/streamline-emoji-1/48/091-alien-64.png -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Hemanth Reddy Allugunti</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<style>
+body {top: 0; left: 0; width: 99%; height: 97%;
+    position: absolute; display: table}
+  p {display: table-cell; vertical-align: middle; text-align: center}
+#timezone * {text-decoration: none;}
+}
+</style>
 
-        setInterval(
-            () => {
-                document.querySelector("#time").innerText = formatter.format(new Date());
-            }
-        , 1000)
-    </script>
+<script type="text/javascript">
+    let options = {
+        timeZone: 'Asia/Kolkata', /* Adjusted to India */
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+    },
+    formatter = new Intl.DateTimeFormat([], options);
+
+    setInterval(
+        () => {
+            document.querySelector("#time").innerText = formatter.format(new Date());
+        }
+    , 1000)
+</script>
 </head>
 
-<body>
-    <div class="container">
-        <header>
-            <h1>Hemanth Reddy Allugunti</h1>
-        </header>
-        <main>
-            <img src="https://github.com/alluguntihemanth/my-website/blob/main/assets/215911.gif?raw=true" alt="Animated Image" class="main-image">
-            <div id="timezone">
-                <p><i><a href="https://24timezones.com/world_directory/current_chennai_time.php">TIME IN CHENNAI INDIA</a> - <span id="time">0:00 PM</span> <a href="https://24timezones.com/time-zone/ist">IST</a></i></p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="https://hemanthallugunti.com/pages/about.html">About</a></li>
-                    <li><a href="https://hemanthallugunti.com/pages/faq.html">FAQ</a></li>
-                    <li><a href="https://hemanthallugunti.com/pages/blog.html">Blog</a></li>
-                    <li><a href="https://drive.google.com/file/d/1SuiA5ruaH5mJGRN-YpSgbIEdK2689EMQ/view?usp=sharing" target="_blank">Resume</a></li>
-                    <li><a href="https://hemanthallugunti.com/pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </main>
-    </div>
+<p>
+<font size="7"><i><b>Hemanth Reddy Allugunti</b></i></font> <br>
+<br>
+<img src="https://github.com/alluguntihemanth/my-website/blob/main/assets/215911.gif?raw=true" style="width:500px; height: auto;">
+<br>
+<br>
+<span id=timezone>
+<i>
+<a href="https://24timezones.com/world_directory/current_chennai_time.php">TIME IN CHENNAI INDIA</a> - <span id="time">0:00 PM</span> <a href="https://24timezones.com/time-zone/ist">IST</a>
+</i>
+</span>
+<br><br>
+
+<a href="https://hemanthallugunti.com/pages/about.html">about</a> //
+<a href="https://hemanthallugunti.com/pages/faq.html">faq</a> //
+<a href="https://hemanthallugunti.com/pages/blog.html">blog</a> //
+<a href="https://drive.google.com/file/d/1SuiA5ruaH5mJGRN-YpSgbIEdK2689EMQ/view?usp=sharing" target="_blank">resume</a> //
+<a href="https://hemanthallugunti.com/pages/contact.html">contact</a>
+
+<br>
+<br>
 </body>
 </html>
-
