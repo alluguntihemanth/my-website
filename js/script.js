@@ -1,5 +1,4 @@
 // script.js
-
 function updateTime() {
     const timeElement = document.getElementById('time');
     const now = new Date();
@@ -8,13 +7,14 @@ function updateTime() {
         minute: '2-digit', 
         second: '2-digit', 
         hour12: true, 
-        timeZone: 'America/Denver' // Salt Lake City timezone
+        timeZone: 'Asia/Kolkata' // Adjusted for India
     };
     
-    const timeString = now.toLocaleTimeString('en-US', options) + ' MDT';
+    const timeString = now.toLocaleTimeString('en-US', options) + ' IST';
     timeElement.textContent = timeString;
 }
 
 // Update time every second
 setInterval(updateTime, 1000);
 updateTime();
+
