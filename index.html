@@ -1,56 +1,73 @@
 <!DOCTYPE html>
 <html>
-<!-- Favicon by Streamline Design Inc. - https://cdn0.iconfinder.com/data/icons/streamline-emoji-1/48/091-alien-64.png -->
-<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Hemanth Reddy Allugunti</title>
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<style>
-body {top: 0; left: 0; width: 99%; height: 97%;
-    position: absolute; display: table}
-  p {display: table-cell; vertical-align: middle; text-align: center}
-#timezone * {text-decoration: none;}
-}
-</style>
-
-<script type="text/javascript">
-    let options = {
-        timeZone: 'Asia/Kolkata', /* Adjusted to India */
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric',
-    },
-    formatter = new Intl.DateTimeFormat([], options);
-
-    setInterval(
-        () => {
-            document.querySelector("#time").innerText = formatter.format(new Date());
+<head>
+    <meta charset="UTF-8">
+    <title>Hemanth Reddy Allugunti</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #282828;
+            color: #e3e3e3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
         }
-    , 1000)
-</script>
+
+        .retro-button {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #ffcc00;
+            border: 3px solid #333;
+            padding: 10px 20px;
+            margin: 10px;
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.2s ease;
+        }
+
+        .retro-button:hover {
+            background-color: #333;
+            color: #ffcc00;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        #timezone * {
+            text-decoration: none;
+        }
+    </style>
 </head>
+<body>
+    <h1 style="font-size: 3rem; color: #ffcc00;">Hemanth Reddy Allugunti</h1>
+    <img src="https://github.com/alluguntihemanth/my-website/blob/main/assets/215911.gif?raw=true" style="width:500px; height: auto;">
+    
+    <p style="margin-top: 20px;">
+        <span id="timezone">
+            <i>
+                <a href="https://24timezones.com/world_directory/current_chennai_time.php" style="color: #ffcc00;">TIME IN CHENNAI INDIA</a> - 
+                <span id="time" style="color: #ffcc00;">0:00 PM</span> <a href="https://24timezones.com/time-zone/ist" style="color: #ffcc00;">IST</a>
+            </i>
+        </span>
+    </p>
 
-<p>
-<font size="7"><i><b>Hemanth Reddy Allugunti</b></i></font> <br>
-<br>
-<img src="https://github.com/alluguntihemanth/my-website/blob/main/assets/215911.gif?raw=true" style="width:500px; height: auto;">
-<br>
-<br>
-<span id=timezone>
-<i>
-<a href="https://24timezones.com/world_directory/current_chennai_time.php">TIME IN CHENNAI INDIA</a> - <span id="time">0:00 PM</span> <a href="https://24timezones.com/time-zone/ist">IST</a>
-</i>
-</span>
-<br><br>
-
-<a href="https://hemanthallugunti.com/pages/about.html">about</a> //
-<a href="https://hemanthallugunti.com/pages/faq.html">faq</a> //
-<a href="https://hemanthallugunti.com/pages/blog.html">blog</a> //
-<a href="https://drive.google.com/file/d/1SuiA5ruaH5mJGRN-YpSgbIEdK2689EMQ/view?usp=sharing" target="_blank">resume</a> //
-<a href="https://hemanthallugunti.com/pages/contact.html">contact</a>
-
-<br>
-<br>
+    <div class="links">
+        <a href="https://hemanthallugunti.com/pages/about.html" class="retro-button">About</a>
+        <a href="https://hemanthallugunti.com/pages/qa.html" class="retro-button">Q&A Corner</a>
+        <a href="https://hemanthallugunti.com/pages/blog.html" class="retro-button">Blog</a>
+        <a href="https://drive.google.com/file/d/1SuiA5ruaH5mJGRN-YpSgbIEdK2689EMQ/view?usp=sharing" target="_blank" class="retro-button">Resume</a>
+        <a href="https://hemanthallugunti.com/pages/contact.html" class="retro-button">Contact</a>
+    </div>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
-
