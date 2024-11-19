@@ -1,9 +1,13 @@
-// script.js
-function updateTime() {
-    const timeElement = document.getElementById('time');
-    const currentDate = new Date();
-    const timeString = currentDate.toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' });
-    timeElement.textContent = timeString;
-}
+let options = {
+    timeZone: 'Asia/Kolkata', 
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+},
+formatter = new Intl.DateTimeFormat([], options);
 
-setInterval(updateTime, 1000);
+setInterval(
+    () => {
+        document.querySelector("#time").innerText = formatter.format(new Date());
+    },
+1000);
