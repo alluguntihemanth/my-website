@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Hemanth Allugunti</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Georgia&family=EB+Garamond&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Retro Style -->
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Hemanth Reddy Allugunti</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet"> <!-- Adding Google font -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Linking the updated styles.css -->
 </head>
 <body>
-    <header>
-        <h1>Welcome to Hemanth's Retro Corner</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="qa.html">Q&A Corner</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Hemanth Reddy Allugunti</h1>
+            <img src="https://github.com/alluguntihemanth/my-website/blob/main/assets/215911.gif?raw=true" style="width:500px; height: auto;">
+            <div class="time-location">
+                <i><a href="https://24timezones.com/world_directory/current_chennai_time.php">TIME IN CHENNAI INDIA</a> - <span id="time">0:00 PM</span> <a href="https://24timezones.com/time-zone/ist">IST</a></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://hemanthallugunti.com/pages/about.html">About</a></li>
+                    <li><a href="https://hemanthallugunti.com/pages/faq.html">Q&A</a></li> <!-- Renamed FAQ to Q&A -->
+                    <li><a href="https://hemanthallugunti.com/pages/blog.html">Blog</a></li>
+                    <li><a href="https://drive.google.com/file/d/1SuiA5ruaH5mJGRN-YpSgbIEdK2689EMQ/view?usp=sharing" target="_blank">Resume</a></li>
+                    <li><a href="https://hemanthallugunti.com/pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <script type="text/javascript">
+        let options = { timeZone: 'Asia/Kolkata', hour: 'numeric', minute: 'numeric', second: 'numeric' },
+        formatter = new Intl.DateTimeFormat([], options);
 
-    <section class="intro">
-        <h2>About This Site</h2>
-        <p>Welcome to my retro-styled corner of the web. Here, I share insights about my journey and explore the world of technology with a touch of nostalgia. Dive into the Q&A Corner, check out my blog, or contact me!</p>
-    </section>
-
-    <footer>
-        <p>© 2024 Hemanth Allugunti</p>
-    </footer>
+        setInterval(() => {
+            document.querySelector("#time").innerText = formatter.format(new Date());
+        }, 1000);
+    </script>
 </body>
 </html>
+
