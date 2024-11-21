@@ -1,13 +1,13 @@
-let options = {
-    timeZone: 'Asia/Kolkata', 
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-},
-formatter = new Intl.DateTimeFormat([], options);
+document.addEventListener('DOMContentLoaded', function() {
+    function updateClock() {
+        const clockElement = document.getElementById('clock');
+        const currentTime = new Date();
+        const hours = String(currentTime.getHours()).padStart(2, '0');
+        const minutes = String(currentTime.getMinutes()).padStart(2, '0');
+        const seconds = String(currentTime.getSeconds()).padStart(2, '0');
+        clockElement.innerText = `${hours}:${minutes}:${seconds}`;
+    }
 
-setInterval(
-    () => {
-        document.querySelector("#time").innerText = formatter.format(new Date());
-    },
-1000);
+    setInterval(updateClock, 1000);
+    updateClock();
+});
