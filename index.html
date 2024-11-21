@@ -4,43 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemanth Reddy Allugunti</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="pages/about.html" class="nav-btn">About Me</a></li>
-                <li><a href="pages/projects.html" class="nav-btn">Projects</a></li>
-                <li><a href="pages/blog.html" class="nav-btn">Blog</a></li>
-                <li><a href="pages/contact.html" class="nav-btn">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div id="flip-clock" class="flip-clock"></div>
     </header>
 
     <main>
         <section class="hero">
-            <img src="https://github.com/alluguntihemanth/my-website/blob/main/assets/215911.gif?raw=true" alt="Home Gif" class="hero-img">
-            <div class="flip-clock" id="flip-clock">
-                <div id="clock"></div>
+            <div class="hero-text">
+                <h1>Welcome to My Website</h1>
+                <p>Explore my work, projects, and more.</p>
+            </div>
+            <div class="hero-img">
+                <img src="assets/215911.gif" alt="Welcome Image" />
             </div>
         </section>
 
-        <section class="intro">
-            <h1>Welcome to My Website!</h1>
-            <p>Hi, I'm Hemanth Reddy Allugunti, a passionate AI enthusiast and developer.</p>
-            <div class="cta">
-                <a href="pages/about.html" class="btn primary-btn">Learn More About Me</a>
-                <a href="pages/contact.html" class="btn secondary-btn">Get in Touch</a>
-            </div>
+        <section class="cta">
+            <a href="pages/about.html" class="btn">About Me</a>
+            <a href="pages/contact.html" class="btn secondary-btn">Contact Me</a>
         </section>
     </main>
 
     <footer>
         <p>© 2024 Hemanth Reddy Allugunti. All Rights Reserved.</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/hemanthallugunti/">Hemanth's LinkedIn</a></p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
 
