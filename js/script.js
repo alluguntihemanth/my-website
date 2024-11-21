@@ -1,13 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-    function updateClock() {
-        const clockElement = document.getElementById('clock');
-        const currentTime = new Date();
-        const hours = String(currentTime.getHours()).padStart(2, '0');
-        const minutes = String(currentTime.getMinutes()).padStart(2, '0');
-        const seconds = String(currentTime.getSeconds()).padStart(2, '0');
-        clockElement.innerText = `${hours}:${minutes}:${seconds}`;
-    }
-
-    setInterval(updateClock, 1000);
-    updateClock();
+document.addEventListener("DOMContentLoaded", function () {
+    // Initialize flip clock here (you can use any flip-clock library)
+    setInterval(() => {
+        const clock = document.getElementById("clock");
+        const now = new Date();
+        clock.innerHTML = now.toLocaleTimeString();
+    }, 1000);
 });
