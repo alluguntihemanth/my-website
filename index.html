@@ -1,55 +1,37 @@
 <!DOCTYPE html>
-<html>
-<!-- Favicon by Streamline Design Inc. - https://cdn0.iconfinder.com/data/icons/streamline-emoji-1/48/091-alien-64.png -->
-<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Hemanth Reddy Allugunti</title>
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<style>
-body {top: 0; left: 0; width: 99%; height: 97%;
-    position: absolute; display: table}
-  p {display: table-cell; vertical-align: middle; text-align: center}
-#timezone * {text-decoration: none;}
-}
-</style>
-
-<script type="text/javascript">
-    let options = {
-        timeZone: 'Asia/Kolkata', /* Adjusted to India */
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric',
-    },
-    formatter = new Intl.DateTimeFormat([], options);
-
-    setInterval(
-        () => {
-            document.querySelector("#time").innerText = formatter.format(new Date());
-        }
-    , 1000)
-</script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanth Reddy Allugunti</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="pages/about.html">About Me</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<p>
-<font size="7"><i><b>Hemanth Reddy Allugunti</b></i></font> <br>
-<br>
-<img src="https://github.com/alluguntihemanth/my-website/blob/main/assets/215911.gif?raw=true" style="width:500px; height: auto;">
-<br>
-<br>
-<span id=timezone>
-<i>
-<a href="https://24timezones.com/world_directory/current_chennai_time.php">TIME IN CHENNAI INDIA</a> - <span id="time">0:00 PM</span> <a href="https://24timezones.com/time-zone/ist">IST</a>
-</i>
-</span>
-<br><br>
+    <main>
+        <section class="hero">
+            <img src="https://github.com/alluguntihemanth/my-website/blob/main/assets/215911.gif?raw=true" alt="Home Gif">
+            <div class="flip-clock" id="flip-clock">
+                <div id="clock"></div>
+            </div>
+        </section>
+    </main>
 
-<a href="https://hemanthallugunti.com/pages/about.html">about</a> //
-<a href="https://hemanthallugunti.com/pages/faq.html">faq</a> //
-<a href="https://hemanthallugunti.com/pages/blog.html">blog</a> //
-<a href="https://drive.google.com/file/d/1SuiA5ruaH5mJGRN-YpSgbIEdK2689EMQ/view?usp=sharing" target="_blank">resume</a> //
-<a href="https://hemanthallugunti.com/pages/contact.html">contact</a>
-
-<br>
-<br>
+    <footer>
+        <p>© 2024 Hemanth Reddy Allugunti. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
+
