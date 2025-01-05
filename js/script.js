@@ -1,14 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let options = {
-        timeZone: 'Asia/Kolkata',
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric',
-    };
-    let formatter = new Intl.DateTimeFormat([], options);
+// Set time in Chennai (India)
+let options = {
+    timeZone: 'Asia/Kolkata',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+};
+let formatter = new Intl.DateTimeFormat([], options);
 
-    setInterval(() => {
-        document.querySelector("#timezone").innerText = formatter.format(new Date());
-    }, 1000);
-});
-
+// Set time dynamically
+setInterval(() => {
+    document.querySelector("#time").innerText = formatter.format(new Date());
+}, 1000);
