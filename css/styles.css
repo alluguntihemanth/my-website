@@ -42,12 +42,12 @@ header p {
     color: #777;
 }
 
-.profile-image, .about-photo {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+.profile-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     margin-top: 20px;
+    border-radius: 0;
 }
 
 /* Timezone Info */
