@@ -44,9 +44,9 @@ header p {
 
 /* Target the img directly without a class */
 header img {
-    width: auto; /* Allow width to adjust freely */
-    max-width: 100%; /* Adjust the image to fit its container */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%; /* Allow the image to scale freely */
+    max-width: 300px; /* Limit maximum size of the image */
+    height: auto; /* Maintain aspect ratio */
     margin-top: 20px;
     border-radius: 0; /* Remove rounded corners */
     display: block; /* Make it block-level */
