@@ -42,17 +42,17 @@ header p {
     color: #777;
 }
 
-.profile-image {
-    width: auto; /* Allow the width to adjust freely */
-    max-width: 400px; /* Limit the maximum width */
-    height: auto; /* Maintain aspect ratio */
+/* Target the img directly without a class */
+header img {
+    width: auto; /* Allow width to adjust freely */
+    max-width: 100%; /* Adjust the image to fit its container */
+    height: auto; /* Maintain the aspect ratio */
     margin-top: 20px;
     border-radius: 0; /* Remove rounded corners */
-    display: block; /* Ensure it behaves as a block-level element */
+    display: block; /* Make it block-level */
     margin-left: auto; /* Center horizontally */
     margin-right: auto; /* Center horizontally */
 }
-
 
 /* Timezone Info */
 #timezone {
