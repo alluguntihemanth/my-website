@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+User-agent: *
+Disallow: /
+Allow: /index.html
+Allow: /pages/about.html
+Allow: /pages/contact.html
+=======
+User-agent: *
+Disallow:
+>>>>>>> d697b69fe08245abd09ccc8a0dc27e94de79b8da
