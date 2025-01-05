@@ -106,7 +106,7 @@ footer p {
     color: #333;
 }
 
-/* About Image (Profile Pic Style) */
+/*
 .about-photo {
     width: 150px !important; /* Adjust width */
     height: 150px !important; /* Keep height equal to width for a perfect circle */
@@ -118,6 +118,7 @@ footer p {
     margin-left: auto !important;
     margin-right: auto !important; /* Centers the image horizontally */
 }
+*/
 
 
 /* Links */
