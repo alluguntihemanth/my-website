@@ -42,17 +42,6 @@ header p {
     color: #777;
 }
 
-/* Target the img directly without a class */
-header img {
-    width: 100; /* Allow the image to scale freely */
-    height: 200; /* Maintain aspect ratio */
-    margin-top: 20px;
-    border-radius: 0; /* Remove rounded corners */
-    display: block; /* Make it block-level */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
-}
-
 /* Timezone Info */
 #timezone {
     margin-top: 15px;
