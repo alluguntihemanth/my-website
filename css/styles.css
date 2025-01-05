@@ -62,8 +62,8 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 0;
-    padding: 5px 0;  /* Reduced padding for smaller height */
+    margin-top: 20px;  /* Ensures it comes after the timezone section */
+    padding: 10px 0;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -83,14 +83,14 @@ nav a:hover {
     color: white;
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
     text-align: center;
-    padding: 10px;  /* Reduced padding */
     font-size: 1rem;
-    position: static;  /* Static positioning for the footer */
+    padding: 10px 0;
+    position: static;  /* Make footer static so it doesn't stick */
     width: 100%;
-    background-color: transparent;
+    margin-top: auto;  /* Push footer to the bottom of the content */
 }
 
 /* Footer Text */
@@ -143,3 +143,4 @@ ul li a:hover {
         font-size: 0.9rem;
     }
 }
+
