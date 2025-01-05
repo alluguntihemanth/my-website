@@ -62,7 +62,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;  /* Ensures it comes after the timezone section */
+    margin-top: 10px;  /* Reduce the margin between timezone and nav */
     padding: 10px 0;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
