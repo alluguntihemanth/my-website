@@ -108,16 +108,17 @@ footer p {
 
 /* About Image (Profile Pic Style) */
 .about-photo {
-    width: 150px; /* Adjust width */
-    height: 150px; /* Keep height equal to width for a perfect circle */
-    border-radius: 50%; /* Round the image to make it circular */
-    border: 5px solid #333; /* Border around the image */
-    object-fit: cover; /* Ensures image is cropped and fits into the circle */
-    margin-bottom: 20px; /* Adds spacing below the image */
-    display: block; /* Makes it block-level so it centers */
-    margin-left: auto;
-    margin-right: auto; /* Centers the image horizontally */
+    width: 150px !important; /* Adjust width */
+    height: 150px !important; /* Keep height equal to width for a perfect circle */
+    border-radius: 50% !important; /* Round the image to make it circular */
+    border: 5px solid #333 !important; /* Border around the image */
+    object-fit: cover !important; /* Ensures image is cropped and fits into the circle */
+    margin-bottom: 20px !important; /* Adds spacing below the image */
+    display: block !important; /* Makes it block-level so it centers */
+    margin-left: auto !important;
+    margin-right: auto !important; /* Centers the image horizontally */
 }
+
 
 
 /* Header */
