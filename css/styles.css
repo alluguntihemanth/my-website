@@ -43,12 +43,16 @@ header p {
 }
 
 .profile-image {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+    width: auto; /* Allow the width to adjust freely */
+    max-width: 400px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
     margin-top: 20px;
-    border-radius: 0;
+    border-radius: 0; /* Remove rounded corners */
+    display: block; /* Ensure it behaves as a block-level element */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
 }
+
 
 /* Timezone Info */
 #timezone {
