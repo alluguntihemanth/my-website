@@ -1,82 +1,75 @@
-/* Reset and base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
 }
 
-/* Header styling */
 header {
-    background-color: #1e2a47;
-    color: white;
-    padding: 2rem;
     text-align: center;
-    position: relative;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
 }
-header .header-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+
+header img {
+    width: 150px;
+    border-radius: 50%;
 }
-header .header-content p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+
+header h1 {
+    margin-top: 10px;
+    font-size: 2em;
 }
-header .header-gif {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    margin-bottom: 1.5rem;
-}
-header nav {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-}
+
 header nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-header nav a:hover {
-    color: #ffcc00;
+    margin: 0 15px;
 }
 
-/* Main content styling */
-main {
-    padding: 2rem;
-    flex-grow: 1;
-}
-.bio {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-.bio img {
-    border-radius: 50%;
-    width: 200px;
-    margin-bottom: 1rem;
-}
-.bio p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 }
 
-/* Footer styling */
+#gif-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 footer {
-    background-color: #1e2a47;
-    color: white;
     text-align: center;
-    padding: 1rem;
-    font-size: 1rem;
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+
+#bio img {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+#projects .project {
+    margin: 20px 0;
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+#contact-info a {
+    color: #282c34;
+    text-decoration: none;
+}
+
+#resume a {
+    color: #282c34;
+    font-weight: bold;
+}
+
