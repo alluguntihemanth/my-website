@@ -87,12 +87,16 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 10px;  /* Reduced padding */
-    background-color: #333;
-    color: #fff;
     font-size: 1rem;
-    position: fixed;  /* Fixed footer at the bottom */
-    bottom: 0;
+    position: static;  /* Static positioning for the footer */
     width: 100%;
+    background-color: transparent;
+}
+
+/* Footer Text */
+footer p {
+    margin: 0;
+    color: #333;
 }
 
 /* Links */
