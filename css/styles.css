@@ -1,60 +1,58 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
 
-header {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.header h1 {
+    font-size: 3em;
+    font-weight: bold;
 }
 
-h1 {
-    font-size: 2em;
-    color: #333;
+#timezone {
+    margin-top: 20px;
 }
 
-.profile-image, .about-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+#timezone i {
+    font-size: 1.2em;
+}
+
+nav {
+    margin-top: 20px;
 }
 
 nav a {
-    margin: 10px;
-    color: #0077b6;
     text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+img {
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 footer {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #555;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 5px 0;
-}
-
-a {
-    color: #0077b6;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 
