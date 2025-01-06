@@ -94,7 +94,6 @@ footer p {
 }
 */
 
-
 /* Links */
 ul {
     list-style-type: none;
@@ -136,3 +135,15 @@ ul li a:hover {
     }
 }
 
+/* Positioning image at the bottom-right corner */
+.bottom-right-image {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000; /* Ensure it is on top of other elements */
+}
+
+.bottom-right-image img {
+    width: 150px;
+    height: auto;
+}
