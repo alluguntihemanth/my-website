@@ -136,9 +136,3 @@ ul li a:hover {
     right: 10px;
     z-index: 1000; /* Ensure it's on top of other elements */
 }
-
-/* Removed Profile Image Styles */
-.profile-image {
-    /* Image class removed from HTML, so this block will no longer be needed */
-    /* These rules are now irrelevant as the class no longer exists in the HTML. */
-}
