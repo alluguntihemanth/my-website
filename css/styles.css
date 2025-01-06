@@ -80,20 +80,6 @@ footer p {
     color: #333;
 }
 
-/*
-.about-photo {
-    width: 150px !important; /* Adjust width */
-    height: 150px !important; /* Keep height equal to width for a perfect circle */
-    border-radius: 50% !important; /* Round the image to make it circular */
-    border: 5px solid #333 !important; /* Border around the image */
-    object-fit: cover !important; /* Ensures image is cropped and fits into the circle */
-    margin-bottom: 20px !important; /* Adds spacing below the image */
-    display: block !important; /* Makes it block-level so it centers */
-    margin-left: auto !important;
-    margin-right: auto !important; /* Centers the image horizontally */
-}
-*/
-
 /* Links */
 ul {
     list-style-type: none;
@@ -116,11 +102,6 @@ ul li a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .profile-image, .about-photo {
-        width: 120px;
-        height: 120px;
-    }
-
     header h1 {
         font-size: 2rem;
     }
@@ -156,13 +137,8 @@ ul li a:hover {
     z-index: 1000; /* Ensure it's on top of other elements */
 }
 
-/* New CSS for profile image */
+/* Removed Profile Image Styles */
 .profile-image {
-    width: 100%; /* Makes the image responsive */
-    max-width: 1000px; /* Maximum width to fit within the page */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    margin-left: auto;
-    margin-right: auto; /* Centers the image horizontally */
+    /* Image class removed from HTML, so this block will no longer be needed */
+    /* These rules are now irrelevant as the class no longer exists in the HTML. */
 }
-
