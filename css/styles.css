@@ -155,3 +155,14 @@ ul li a:hover {
     right: 10px;
     z-index: 1000; /* Ensure it's on top of other elements */
 }
+
+/* New CSS for profile image */
+.profile-image {
+    width: 100%; /* Makes the image responsive */
+    max-width: 1000px; /* Maximum width to fit within the page */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centers the image horizontally */
+}
+
