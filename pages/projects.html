@@ -1,27 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Projects - Hemanth Reddy Allugunti</title>
-    <link rel="stylesheet" href="../css/styles.css">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Hemanth Allugunti">
+    <meta name="description" content="AI/ML portfolio showcasing projects and skills.">
+    <meta name="keywords" content="AI, machine learning, portfolio, Hemanth Allugunti, projects, contact">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hemanthallugunti.com">
+    <meta property="og:site_name" content="Hemanth Allugunti Portfolio">
+    <meta property="og:image" content="https://github.com/alluguntihemanth/my-website/blob/main/assets/headshot-og-img.png?raw=true">
+    <meta property="og:title" content="Hemanth Allugunti Portfolio">
+    <meta property="og:description" content="Explore my AI/ML projects, skills, and professional background.">
+
+    <title>My Projects - Hemanth Allugunti</title>
+    <meta name="description" content="Explore my AI/ML projects showcasing my skills in artificial intelligence, machine learning, and deep learning.">
+
+    <link rel="shortcut icon" href="../assets/brick_favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/brick_favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: "YourCustomFont", 'Arial', sans-serif;
+            
+        }
+
+        #name {
+            font-size: 20px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .project-list {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 18px;
+            width: 61%;
+            display: block;
+            margin-bottom: 40px;
+            overflow: auto;
+        }
+
+        .project-list li {
+            margin: 10px 0;
+        }
+
+        .project-list a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .project-list a:hover {
+            text-decoration: underline;
+        }
+
+        #back-link {
+            font-size: 16px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        footer {
+            position: relative;  /* Changed from fixed to relative */
+            margin-top: auto;     /* Ensures footer stays at the bottom of the content */
+            width: 100%;
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            .project-list {
+                width: 90%; /* Adjust width for mobile screens */
+            }
+            #name {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Projects</h1>
-        <p>Explore some of the amazing AI-driven projects I’ve worked on!</p>
 
-        <ul>
-            <li><a href="https://github.com/alluguntihemanth/Project_Matthew-0">AI-Driven Conversational Agent</a> - A conversational agent powered by the Groq API and LangChain.</li>
-            <li><a href="https://github.com/alluguntihemanth/Rasa-Negotioation-ChatBot">Rasa-Negotioation-ChatBot</a> - A context-aware chatbot utilizing Rasa for natural language processing and intent detection..</li>
-        </ul>
-    </header>
+<a id="back-link" href="../index.html" rel="noopener noreferrer">Back to Home</a>
 
-    <footer>
-        <p>&copy; 2025 Hemanth Reddy Allugunti. All rights reserved.</p>
-    </footer>
+<p id="name">
+    <font size="5"><i><b>Hemanth Reddy Allugunti</b></i></font>
+    <span style="font-size: 16px;"> | My Projects</span>
+</p>
+
+<div class="project-list">
+    <ul>
+        <li><b>AI-Driven Conversational Agent | Groq API, LangChain, Streamlit, Python, JavaScript</b><br>
+            <ul>
+                <li>Developed an AI conversational agent capable of dynamic, human-like interactions using Groq API</li>
+                <li>Utilized LangChain for managing language models, enabling real-time understanding</li>
+                <li>Deployed the agent on Streamlit for smooth and responsive interaction</li>
+            </ul>
+            <a href="https://github.com/alluguntihemanth/Project-Matthew" target="_blank">GitHub</a>
+        </li>
+        
+        <li><b>Negotiation Chatbot | Rasa, Python, NLP, Custom Policies</b><br>
+            
+            <ul>
+                <li>Built a negotiation chatbot to simulate real-time price negotiations using Rasa</li>
+                <li>Integrated custom logic to evaluate offers and provide dynamic responses</li>
+                <li>Managed user interaction and purchase flow through dynamic dialogue management</li>
+            </ul>
+            <a href="https://github.com/alluguntihemanth/Rasa-Negotioation-ChatBot" target="_blank">GitHub</a>
+        </li>
+
+        <li><b>Biometric Face Recognition System | Python, OpenCV, NumPy, TensorFlow</b><br>
+            
+            <ul>
+                <li>Created a face recognition system using CNNs for image classification</li>
+                <li>Used Haar Features and Integral Images for feature extraction, implementing a Haar Cascade Classifier for real-time recognition</li>
+            </ul>
+            <a href="https://github.com/alluguntihemanth/biometric_face_recognition" target="_blank">GitHub</a>
+        </li>
+
+        <li><b>RetailVisionAI | PyTorch, Flask, Microservices, JSON, YOLO</b><br>
+            
+            <ul>
+                <li>Built an AI pipeline for product detection using Flask and PyTorch</li>
+                <li>Integrated YOLO for real-time object detection</li>
+                <li>Designed microservices to process images and return JSON responses for product grouping</li>
+            </ul>
+            <!-- <a href="https://github.com/alluguntihemanth/RetailVisionAI" target="_blank">GitHub</a> -->
+        </li>
+
+        <li><b>Quantum-CNN | Python, Tensor-Quantum, Cirq, scikit-learn, TensorFlow/Keras</b><br>
+            
+            <ul>
+                <li>Developed a Quantum-inspired CNN Model for enhanced object detection</li>
+                <li>Leveraged TensorFlow Quantum and Cirq for quantum circuit simulations</li>
+                <li>Explored quantum feature extraction techniques to improve model accuracy</li>
+            </ul>
+            <!-- <a href="https://github.com/alluguntihemanth/Quantum-CNN" target="_blank">GitHub</a> -->
+    </ul>
+</div>
+
+<!-- Footer with All Rights Reserved notice -->
+<footer>
+    <p>&copy; 2025 Hemanth Reddy Allugunti. All Rights Reserved.</p>
+</footer>
+
 </body>
-
-
-
+</html>
