@@ -1,61 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Hemanth Reddy Allugunti</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Hemanth Allugunti">
+    <meta name="description" content="AI/ML portfolio showcasing projects and skills.">
+    <meta name="keywords" content="AI, machine learning, portfolio, Hemanth Allugunti, projects, contact">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hemanthallugunti.com">
+    <meta property="og:site_name" content="Hemanth Allugunti Portfolio">
+    <meta property="og:image" content="https://github.com/alluguntihemanth/my-website/blob/main/assets/headshot-og-img.png?raw=true">
+    <meta property="og:title" content="Hemanth Allugunti Portfolio">
+    <meta property="og:description" content="Explore my AI/ML projects, skills, and professional background.">
+
+    <title>Hi, I'm Hemanth!</title>
+    <link rel="shortcut icon" href="assets/brick_favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/brick_favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            box-sizing: border-box;
+            
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 1px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        @media screen and (max-width: 600px) {
+        footer {
+            font-size: 18px; /* Adjust font size for mobile screens */
+            padding: 15px 0;  /* Optional: Add some extra padding if you like */
+
+            nav {
+                flex-direction: column; /* Stack navigation links */
+                align-items: center;
+            }
+            nav a {
+                  padding: 10px 0; /* Adjust spacing between links */
+            } 
+        }
+
+        .content {
+            padding-bottom: 60px; /* Optional: Prevent content from being hidden under the footer */
+        }
+    }
+        #timezone * {
+            text-decoration: none;
+        }
+
+        #timezone {
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 18px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+          img { border-radius: 50%; }
+    </style>
+    <script type="text/javascript">
+        let options = {
+            timeZone: 'Asia/Kolkata',
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+        },
+        formatter = new Intl.DateTimeFormat([], options);
+
+        setInterval(() => {
+            document.querySelector("#time").innerText = formatter.format(new Date());
+        }, 1000);
+    </script>
 </head>
 <body>
-    <header>
-        <h1><i><b>Hemanth Reddy Allugunti</b></i></h1>
-        <p>Final Year B.Tech Artificial Intelligence Student</p>
+    <div class="content">
         <p>
-            <br> 
-            <img src="https://github.com/alluguntihemanth/my-website/blob/main/assets/images/pixelcut-export.png?raw=true" width="460" height="350" ><br>
-            <br>
+            <font size="7"><i><b>Hemanth Reddy Allugunti</b></i></font> <br>
+
+            <picture>
+                <source srcset="assets/images/headshot.webp" type="image/webp">
+                <img src="assets/images/headshot.jpg" alt="Profie Picture">
+            </picture>
+            
+            <br><br>
+            <font size="4">
+                I'm Hemanth Reddy Allugunti, an undergraduate student at SRMIST, pursuing a B.Tech in Artificial Intelligence. 
+                My interests lie in AI, machine learning, and quantum computing, where I aim to explore and expand the capabilities 
+                of these technologies. My projects include developing a quantum-inspired CNN for object detection, building AI-driven 
+                conversational agents, and creating real-time product detection systems for retail.
+
+                I'm always learning and experimenting with new approaches to better understand and leverage these technologies. 
+                You can find more details about my projects on the Projects page.
+            </font>
+            <br><br>
+            
+            <span id="timezone">
+                <i>
+                    <a href="//24timezones.com/time-zone/ist" style="text-decoration: none" class="clock24" title="IST local time" target="_blank" rel="nofollow">Current time in India:</a>
+                    <span id="time"></span>
+                </i>
+            </span>
+            <br><br>
+            
+            <a href="pages/projects.html" rel="noopener noreferrer">Projects</a> //
+            <a href="https://github.com/alluguntihemanth/" target="_blank" rel="noopener noreferrer">Github</a> //
+            
+            <a href="assets/hemanth-AI-CV.pdf" target="_blank" rel="noopener noreferrer">View My Resume</a> //
+            
+
+            <a href="pages/contact.html" rel="noopener noreferrer">Contact</a>
         </p>
-        <div id="timezone">
-            
-            <!--
-            <i>
-                <a href="https://24timezones.com/world_directory/current_chennai_time.php">TIME IN CHENNAI</a> - <span id="time"></span>
-            </i>
-            -->
-            
-        <div id="clock">
-            <iframe src="https://free.timeanddate.com/clock/i9pkxom1/n1520/tlin/fn8/fs20/fc0f0/tc000/ftb/bas2/bat7/bacfff/pa8/tt0/tw1/tm1/th1/ta1/tb4" frameborder="0" width="212" height="66"></iframe>
-        </div>
-        </div>
-    </header>
-
-    <!-- Removed the nav container -->
-    <div class="button-container">
-        <a href="pages/about.html">
-            <img src="https://dabuttonfactory.com/button.png?t=About&f=Lobster+Two-Bold&ts=30&tc=ffe599&tshs=1&tshc=000&hp=16&vp=16&c=11&bgt=unicolored&bgc=15d798" alt="About">
-        </a>
-        <a href="pages/projects.html">
-            <img src="https://dabuttonfactory.com/button.png?t=Projects&f=Lobster+Two-Bold&ts=30&tc=ffe599&tshs=1&tshc=000&hp=16&vp=16&c=11&bgt=unicolored&bgc=15d798" alt="Projects">
-        </a>
-        <a href="assets/hemanth-AI-CV.pdf" target="_blank">
-            <img src="https://dabuttonfactory.com/button.png?t=Resume&f=Lobster+Two-Bold&ts=30&tc=ffe599&tshs=1&tshc=000&hp=16&vp=16&c=11&bgt=unicolored&bgc=15d798" alt="Resume">
-        </a>
-        <a href="pages/contact.html">
-            <img src="https://dabuttonfactory.com/button.png?t=Contact&f=Lobster+Two-Bold&ts=30&tc=ffe599&tshs=1&tshc=000&hp=16&vp=16&c=11&bgt=unicolored&bgc=15d798" alt="Contact">
-        </a>
     </div>
-
+    
     <footer>
-        <p>&copy; 2025 Hemanth Reddy Allugunti. All rights reserved.</p>
+        <p>&copy; 2025 Hemanth Reddy Allugunti. All Rights Reserved.</p>
     </footer>
-
-    <script src="js/script.js"></script>
-
-    <!-- Image at the bottom-right corner -->
-    <div class="bottom-right-image">
-        <img src="https://github.com/alluguntihemanth/my-website/blob/main/assets/images/cropped01-index-page.png?raw=true" alt="Bottom Right Image">
-    </div>
 </body>
 </html>
