@@ -1,3 +1,4 @@
+/*
 // Set time in Chennai (India)
 let options = {
     timeZone: 'Asia/Kolkata',
@@ -11,3 +12,4 @@ let formatter = new Intl.DateTimeFormat([], options);
 setInterval(() => {
     document.querySelector("#time").innerText = formatter.format(new Date());
 }, 1000);
+*/
