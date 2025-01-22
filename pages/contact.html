@@ -1,28 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Hemanth Allugunti">
+    <meta name="description" content="AI/ML portfolio showcasing projects and skills.">
+    <meta name="keywords" content="AI, machine learning, portfolio, Hemanth Allugunti, projects, contact">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hemanthallugunti.com">
+    <meta property="og:site_name" content="Hemanth Allugunti Portfolio">
+    <meta property="og:image" content="https://github.com/alluguntihemanth/my-website/blob/main/assets/headshot-og-img.png?raw=true">
+    <meta property="og:title" content="Hemanth Allugunti Portfolio">
+    <meta property="og:description" content="Explore my AI/ML projects, skills, and professional background.">
+
     <title>Contact - Hemanth Reddy Allugunti</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="Get in touch with Hemanth Allugunti for AI/ML projects and collaborations. Let's connect and explore opportunities.">
+
+    <link rel="shortcut icon" href="../assets/brick_favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/brick_favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "YourCustomFont", 'Arial', sans-serif;
+        }
+
+        #name {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        #back-link {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            #name {
+                font-size: 18px;
+            }
+            .contact-info {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <script>
+        // Dynamically display email to prevent scraping
+        function displayEmail() {
+            const email = 'hemanthallugunti' + '@' + 'gmail.com';
+            document.getElementById('email').innerText = email;
+            document.getElementById('email').setAttribute('href', 'mailto:' + email);
+        }
+
+        window.onload = displayEmail;  // Run when the page loads
+    </script>
 </head>
+
 <body>
-    <header>
-        <h1>Contact</h1>
-        <p>If you'd like to get in touch, you can reach out through the following methods:</p>
 
-        <p>Email:</p>
-        <ul>
-            <li>Personal: <a href="mailto:hemanthallugunti@gmail.com">hemanthallugunti@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/hemanth-reddy-allugunti-883b36216/" target="_blank">https://www.linkedin.com/in/hemanth-reddy-allugunti-883b36216/</a></li>
-        </ul>
-    </header>
+<p id="name">
+    <font size="5"><i><b>Hemanth Reddy Allugunti</b></i></font>
+    <span style="font-size: 16px;"> | Contact</span>
+</p>
 
-    <footer>
-        <p>&copy; 2025 Hemanth Reddy Allugunti. All rights reserved.</p>
-    </footer>
+<div class="contact-info">
+    <p><b>Email:</b> <a id="email" href="#"></a></p>
+    <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/hemanth-reddy-allugunti-883b36216/" target="_blank">linkedin.com/in/hemanth-allugunti</a></p>
+</div>
+
+<a id="back-link" href="../index.html" rel="noopener noreferrer">Back to Home</a>
+
+<!-- Footer with All Rights Reserved notice -->
+<footer>
+    <p>&copy; 2025 Hemanth Reddy Allugunti. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
-
-
