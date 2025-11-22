@@ -25,16 +25,18 @@
     <link rel="shortcut icon" href="../assets/brick_favicon.ico" type="image/x-icon">
     <link rel="icon" href="../assets/brick_favicon.ico" type="image/x-icon">
     <style>
-        body {
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
-            width: 100%;
-            min-height: 100vh;
+        }
+
+        body {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            width: 100%;
             font-family: "YourCustomFont", 'Arial', sans-serif;
-            
+            box-sizing: border-box;
         }
 
         #name {
@@ -44,6 +46,7 @@
         }
 
         .project-list {
+            flex: 1;
             margin-top: 20px;
             text-align: left;
             font-size: 18px;
@@ -76,14 +79,14 @@
         }
 
         footer {
-            position: relative;  /* Changed from fixed to relative */
-            margin-top: auto;     /* Ensures footer stays at the bottom of the content */
+            flex-shrink: 0;
             width: 100%;
             text-align: center;
             background-color: #f1f1f1;
             padding: 10px 0;
             font-size: 14px;
             color: #333;
+            box-sizing: border-box;
         }
 
 
@@ -94,6 +97,13 @@
             }
             #name {
                 font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            footer {
+                font-size: 12px;
+                padding: 8px 0;
             }
         }
     </style>
